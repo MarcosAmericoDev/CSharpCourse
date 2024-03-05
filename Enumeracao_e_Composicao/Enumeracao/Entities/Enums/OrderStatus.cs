@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Enumeracao.Entities.Enums
 {
-    enum OrderStatus : int
+    internal enum OrderStatus : int
     {
         PendingPayment = 0,
         Processing = 1,
