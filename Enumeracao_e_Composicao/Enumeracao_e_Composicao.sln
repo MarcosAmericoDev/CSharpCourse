@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enumeracao", "Enumeracao\En
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioEnumEComp1", "ExerciciosEnumEComp\ExercicioEnumEComp1.csproj", "{15CCB54D-2D8B-4AFC-8648-B5025EA454F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosEnumEComp2", "ExerciciosEnumEComp2\ExerciciosEnumEComp2.csproj", "{058AACA2-E82C-4789-80DB-7AA6368B9E96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{15CCB54D-2D8B-4AFC-8648-B5025EA454F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15CCB54D-2D8B-4AFC-8648-B5025EA454F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15CCB54D-2D8B-4AFC-8648-B5025EA454F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058AACA2-E82C-4789-80DB-7AA6368B9E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058AACA2-E82C-4789-80DB-7AA6368B9E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058AACA2-E82C-4789-80DB-7AA6368B9E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058AACA2-E82C-4789-80DB-7AA6368B9E96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
