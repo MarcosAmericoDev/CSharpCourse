@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula Base", "Aula Base\Aula Base.csproj", "{A89AC559-23F3-4281-9284-E3C76645D7BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula Base", "Aula Base\Aula Base.csproj", "{A89AC559-23F3-4281-9284-E3C76645D7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceções_Personalizadas", "Exceções_Personalizadas\Exceções_Personalizadas.csproj", "{F30582A2-2BC3-4558-B409-65B06AF637DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A89AC559-23F3-4281-9284-E3C76645D7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A89AC559-23F3-4281-9284-E3C76645D7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A89AC559-23F3-4281-9284-E3C76645D7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30582A2-2BC3-4558-B409-65B06AF637DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30582A2-2BC3-4558-B409-65B06AF637DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30582A2-2BC3-4558-B409-65B06AF637DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30582A2-2BC3-4558-B409-65B06AF637DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
