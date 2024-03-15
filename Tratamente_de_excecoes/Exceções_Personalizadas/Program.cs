@@ -31,7 +31,6 @@ namespace Exceções_Personalizadas
                 checkOutRoom = DateTime.Parse(Console.ReadLine());
 
                 DateTime now = DateTime.Now;
-
                 string? error = reservationRoom.UpdateDates(checkInRoom, checkOutRoom);
                 if (error != null)
                 {

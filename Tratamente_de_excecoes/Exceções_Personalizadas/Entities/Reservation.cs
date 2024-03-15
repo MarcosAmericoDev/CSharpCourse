@@ -21,6 +21,7 @@
             return (int)duration.TotalDays;
         }
 
+<<<<<<< HEAD
         public string? UpdateDates(DateTime checkIn, DateTime checkOut)
         {
             DateTime now = DateTime.Now;
@@ -36,6 +37,12 @@
             Checkin = checkIn;
             Checkout = checkOut;
             return null;
+=======
+        public void UpdateDates(DateTime checkin, DateTime checkout)
+        {
+            Checkin = checkin;
+            Checkout = checkout;
+>>>>>>> e4f8ca0bd8873afc09ed181eaae0ed71bbdc855e
         }
 
         public override string ToString()
