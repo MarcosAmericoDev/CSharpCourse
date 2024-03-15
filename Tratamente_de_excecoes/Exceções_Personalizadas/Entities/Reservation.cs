@@ -1,54 +1,50 @@
-﻿namespace Exceções_Personalizadas.Entities
+﻿using Exceções_Personalizadas.Entities.Exceptions;
+
+namespace Exceções_Personalizadas.Entities
 {
     internal class Reservation
     {
         public int RoomNumber { get; set; }
-        public DateTime Checkin { get; set; }
-        public DateTime Checkout { get; set; }
+        public DateTime CheckIn { get; set; }
+        public DateTime CheckOut { get; set; }
 
         public Reservation() { }
 
-        public Reservation(int roomNumber, DateTime checkin, DateTime checkout)
+        public Reservation(int roomNumber, DateTime checkIn, DateTime checkOut)
         {
+            if (checkOut <= checkIn)
+            {
+                throw new DomainException("Check-out date must be after check-in date");
+            }
             RoomNumber = roomNumber;
-            Checkin = checkin;
-            Checkout = checkout;
+            CheckIn = checkIn;
+            CheckOut = checkOut;
         }
 
         public int Duration()
         {
-            TimeSpan duration = Checkout.Subtract(Checkin);
+            TimeSpan duration = CheckOut.Subtract(CheckIn);
             return (int)duration.TotalDays;
         }
-
-<<<<<<< HEAD
-        public string? UpdateDates(DateTime checkIn, DateTime checkOut)
+        public void UpdateDates(DateTime checkIn, DateTime checkOut)
         {
             DateTime now = DateTime.Now;
             if (checkIn < now || checkOut < now)
             {
-                return "Reservation dates for update must be future dates";
+                throw new DomainException("Reservation dates for update must be future dates");
             }
             if (checkOut <= checkIn)
             {
-                return "Check-out date must be after check-in date";
+                throw new DomainException("Check-out date must be after check-in date");
             }
-
-            Checkin = checkIn;
-            Checkout = checkOut;
-            return null;
-=======
-        public void UpdateDates(DateTime checkin, DateTime checkout)
-        {
-            Checkin = checkin;
-            Checkout = checkout;
->>>>>>> e4f8ca0bd8873afc09ed181eaae0ed71bbdc855e
+            CheckIn = checkIn;
+            CheckOut = checkOut;
         }
 
         public override string ToString()
         {
-            return $"Room: {RoomNumber}, check-in: {Checkin:dd/MM/yyyy}, check-out: " +
-                $"{Checkout:dd/MM/yyyy}, {Duration()} nights";
+            return $"Room: {RoomNumber}, check-in: {CheckIn:dd/MM/yyyy}, check-out: " +
+                $"{CheckOut:dd/MM/yyyy}, {Duration()} nights";
         }
     }
 }
