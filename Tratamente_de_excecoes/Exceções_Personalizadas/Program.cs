@@ -32,14 +32,13 @@ namespace Exceções_Personalizadas
 
                 DateTime now = DateTime.Now;
 
-                if (checkInRoom < now || checkOutRoom < now)
+                string? error = reservationRoom.UpdateDates(checkInRoom, checkOutRoom);
+                if (error != null)
                 {
-                    Console.WriteLine("Error in reservation: Reservation dates for update must be future dates");
-                } else if(checkOutRoom <= checkInRoom) {
-                    Console.WriteLine("Error in reservation: Check-out date must be after check-in date");
-                } else
+                    Console.WriteLine($"Error in reservation: {error}");
+                }
+                else
                 {
-                    reservationRoom.UpdateDates(checkInRoom, checkOutRoom);
                     Console.WriteLine($"Reservation: {reservationRoom}");
                 }
             }
