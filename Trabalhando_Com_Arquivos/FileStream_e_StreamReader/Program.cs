@@ -10,9 +10,11 @@
             try
             {
                 sr = File.OpenText(path);
-
-                string line = sr.ReadLine();
-                Console.WriteLine(line);
+                while(!sr.EndOfStream) 
+                {
+                    string line = sr.ReadLine();
+                    Console.WriteLine(line);
+                }
             }
             catch (IOException e)
             {
