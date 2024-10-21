@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Directory_DirectoryInfo
+﻿namespace Directory_DirectoryInfo
 {
     internal class Program
     {
@@ -10,7 +8,7 @@ namespace Directory_DirectoryInfo
 
             try
             {
-                IEnumerable<string> folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+                var folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
                 Console.WriteLine("FOLDERS:");
                 foreach (string s in folders) 
                 {
