@@ -10,10 +10,20 @@
             {
                 var folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
                 Console.WriteLine("FOLDERS:");
-                foreach (string s in folders) 
+                foreach (string s in folders)
                 {
                     Console.WriteLine(s);
                 }
+
+                var files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("FILES:");
+                foreach (string f in files)
+                {
+                    Console.WriteLine(f);
+                }
+
+                Directory.CreateDirectory(path + @"\newFolder");
+
             }
             catch (IOException e) 
             {
