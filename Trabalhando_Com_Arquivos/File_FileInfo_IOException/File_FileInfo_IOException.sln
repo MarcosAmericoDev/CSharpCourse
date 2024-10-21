@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "usingBlock", "..\usingBlock
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamWriterAula", "..\StreamWriter\StreamWriterAula.csproj", "{DDBCC1AB-33CD-4D58-910E-C5FBD946A4DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory_DirectoryInfo", "..\Directory_DirectoryInfo\Directory_DirectoryInfo.csproj", "{390DD2A8-ABAA-470D-8DE4-501FA7F6F12B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Directory_DirectoryInfo", "..\Directory_DirectoryInfo\Directory_DirectoryInfo.csproj", "{390DD2A8-ABAA-470D-8DE4-501FA7F6F12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AprendendoPath", "..\AprendendoPath\AprendendoPath.csproj", "{BF4A56D2-FCC3-4849-8DD9-DE3B801315EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{390DD2A8-ABAA-470D-8DE4-501FA7F6F12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{390DD2A8-ABAA-470D-8DE4-501FA7F6F12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{390DD2A8-ABAA-470D-8DE4-501FA7F6F12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4A56D2-FCC3-4849-8DD9-DE3B801315EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4A56D2-FCC3-4849-8DD9-DE3B801315EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4A56D2-FCC3-4849-8DD9-DE3B801315EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4A56D2-FCC3-4849-8DD9-DE3B801315EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
