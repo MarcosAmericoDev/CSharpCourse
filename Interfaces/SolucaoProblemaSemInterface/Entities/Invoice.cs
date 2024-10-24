@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace SolucaoProblemaSemInterface.Entities
+namespace SolucaoProblemaComInterface.Entities
 {
     internal class Invoice
     {
@@ -25,8 +25,7 @@ namespace SolucaoProblemaSemInterface.Entities
                 + "\nTax: "
                 + Tax.ToString("F2", CultureInfo.InvariantCulture)
                 + "\nTotal Payment: "
-                + TotalPayment.ToString("F2", CultureInfo.InvariantCulture)
-                ;
+                + TotalPayment.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }

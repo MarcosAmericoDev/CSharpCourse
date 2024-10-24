@@ -1,4 +1,4 @@
-﻿namespace SolucaoProblemaSemInterface.Entities
+﻿namespace SolucaoProblemaComInterface.Entities
 {
     internal class Vehicle
     {

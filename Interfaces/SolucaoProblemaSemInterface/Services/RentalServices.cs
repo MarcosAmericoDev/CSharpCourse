@@ -1,17 +1,19 @@
-﻿using SolucaoProblemaSemInterface.Entities;
+﻿using SolucaoProblemaComInterface.Entities;
 
-namespace SolucaoProblemaSemInterface.Services
+namespace SolucaoProblemaComInterface.Services
 {
     internal class RentalServices
     {
         public double PricePerHour { get; private set; }
         public double PriceperDay { get; private set; }
-        private BrazilTaxService _brazilTaxService = new BrazilTaxService();
 
-        public RentalServices(double pricePerHour, double priceperDay)
+        private ITaxService _taxService;
+
+        public RentalServices(double pricePerHour, double priceperDay, ITaxService taxService)
         {
             PricePerHour = pricePerHour;
             PriceperDay = priceperDay;
+            _taxService = taxService;
         }
 
         public void ProcessInvoice(CarRental carRental)
@@ -29,7 +31,7 @@ namespace SolucaoProblemaSemInterface.Services
                 basicPayment = PriceperDay * Math.Ceiling(duration.TotalDays);
             }
 
-            double tax = _brazilTaxService.Tax(basicPayment);
+            double tax = _taxService.Tax(basicPayment);
 
             carRental.Invoice = new Invoice(basicPayment, tax);
         }

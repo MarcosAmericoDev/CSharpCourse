@@ -10,11 +10,11 @@
   imposto e valor total do pagamento) e informar os dados na tela. Veja os
   exemplos.
 
-  Segue o exemplo sem uso interfaces:
+  Segue o exemplo com uso interfaces:
  */
 
-using SolucaoProblemaSemInterface.Entities;
-using SolucaoProblemaSemInterface.Services;
+using SolucaoProblemaComInterface.Entities;
+using SolucaoProblemaComInterface.Services;
 using System.Globalization;
 
 namespace SolucaoProblemaSemInterface
@@ -38,7 +38,7 @@ namespace SolucaoProblemaSemInterface
 
             CarRental carRental = new CarRental(start, finish, new Vehicle(model));
 
-            RentalServices rentalServices = new RentalServices(hour, day);
+            RentalServices rentalServices = new RentalServices(hour, day, new BrazilTaxService());
 
             rentalServices.ProcessInvoice(carRental);
 
