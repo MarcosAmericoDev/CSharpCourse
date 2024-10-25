@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heranca_Multipla_Problema_Do_Diamante", "Heranca_Multipla_Problema_Do_Diamante.csproj", "{0888D44E-D490-41DD-A27A-E5B0D8AFD72F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0888D44E-D490-41DD-A27A-E5B0D8AFD72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0888D44E-D490-41DD-A27A-E5B0D8AFD72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0888D44E-D490-41DD-A27A-E5B0D8AFD72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0888D44E-D490-41DD-A27A-E5B0D8AFD72F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F51525F-83C5-4CCD-882E-6666F79F1E34}
+	EndGlobalSection
+EndGlobal
