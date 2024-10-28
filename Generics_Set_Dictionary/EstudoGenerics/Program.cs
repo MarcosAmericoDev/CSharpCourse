@@ -1,4 +1,4 @@
-﻿//Problema motivador 1 (reuso)
+﻿//Problema motivador 2 (type safety & performance)
 
 /*
  * Deseja-se fazer um programa que leia um conjunto de N números inteiros (N de
