@@ -1,4 +1,4 @@
-﻿//Problema motivador 2 (type safety & performance)
+﻿//Solução com generics
 
 /*
  * Deseja-se fazer um programa que leia um conjunto de N números inteiros (N de
@@ -14,7 +14,7 @@ namespace EstudoGenerics
     {
         static void Main(string[] args)
         {
-            PrintService printService = new PrintService();
+            PrintService<int> printService = new PrintService<int>();
 
             Console.Write("How many values? ");
             int n = int.Parse(Console.ReadLine());
@@ -26,6 +26,10 @@ namespace EstudoGenerics
             }
 
             printService.Print();
+
+            int a = printService.First();
+            int b = a + 2;
+            Console.WriteLine(b);
 
             Console.WriteLine("First: " + printService.First());
         }

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecricaoDeGenerics", "RecricaoDeGenerics.csproj", "{1866F4C1-5326-4317-A9C5-34E4815AD3D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1866F4C1-5326-4317-A9C5-34E4815AD3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1866F4C1-5326-4317-A9C5-34E4815AD3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1866F4C1-5326-4317-A9C5-34E4815AD3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1866F4C1-5326-4317-A9C5-34E4815AD3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {716B92C8-7681-4001-9F60-21B67F5B0716}
+	EndGlobalSection
+EndGlobal
