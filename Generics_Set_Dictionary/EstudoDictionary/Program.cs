@@ -28,7 +28,7 @@
             Console.WriteLine("Size: " + cookies.Count);
             Console.WriteLine("ALL COOKIES: ");
 
-            foreach (var item in cookies)
+            foreach (KeyValuePair<string,string> item in cookies) // possível usar o var
             {
                 Console.WriteLine(item.Key + ": " + item.Value);
             }
