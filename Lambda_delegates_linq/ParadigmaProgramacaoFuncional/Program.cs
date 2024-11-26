@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        public static int globalValue = 3;
+        public static int globalValue = 10;
 
         static void Main(string[] args)
         {
