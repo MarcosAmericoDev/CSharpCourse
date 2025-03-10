@@ -22,7 +22,7 @@ namespace EstudoDelegatePredicate
         }
         public static bool ProductTest(Product product)
         {
-            return product.Price >= 100;
+            return product.Price >= 100; 
         }
     }
 }
