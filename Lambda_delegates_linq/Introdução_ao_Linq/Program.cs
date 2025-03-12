@@ -14,7 +14,7 @@ namespace Introdução_ao_Linq
                 .Where(EvenNumber)
                 .Select(x => x * 10);
 
-            // Execute the query
+            // Execute the query (execução dos dados)
             foreach (int x in result)
             {
                 Console.WriteLine(x);
